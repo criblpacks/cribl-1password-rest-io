@@ -1,4 +1,5 @@
 1Password API Ruleset:
+
   minRawLength: 256
   rules:
     - condition: "true"
