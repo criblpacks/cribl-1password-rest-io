@@ -12,9 +12,9 @@ This pack is designed to handle JSON data collected from the 1Password Audit Eve
 
 The pack also currently includes three forms of outputs:
 
-1. Normalized JSON (the default)
-2. OCSF - Primarily meant for Amazon Security Lake, the pack can normalize the data into the proper OCSF categories based on action/object type. The target OCSF category can also be managed on an individual action/object type basis through the lookup file `1password_audit_events.csv`.
-3. Splunk - default index and sourcetype supplied from Knowledge > Variables, but can be overwritten in pipeline
+* Normalized JSON (the default)
+* OCSF - Primarily meant for Amazon Security Lake, the pack can normalize the data into the proper OCSF categories based on action/object type. The target OCSF category can also be managed on an individual action/object type basis through the lookup file `1password_audit_events.csv`.
+* Splunk - default index and sourcetype supplied from Knowledge > Variables, but can be overwritten in pipeline
 
 ## Deployment
 
