@@ -12,7 +12,7 @@ This pack is designed to handle JSON data collected from the 1Password Audit Eve
 
 The pack also currently includes three forms of outputs:
 
-1. Normalized JSON
+1. Normalized JSON (the default)
 2. OCSF - Primarily meant for Amazon Security Lake, the pack can normalize the data into the proper OCSF categories based on action/object type. The target OCSF category can also be managed on an individual action/object type basis through the lookup file `1password_audit_events.csv`.
 3. Splunk - default index and sourcetype supplied from Knowledge > Variables, but can be overwritten in pipeline
 
@@ -23,13 +23,13 @@ The pack also currently includes three forms of outputs:
 * To use a different Destination: You must update the pack's routes to specify your desired Destination.
 * For immediate functionality without requiring Pack route filter expression modifications, every bundled Source within this pack adds a hidden field: `__packsource`. This field allows for seamless routing based on the Pack source.
 
-## Configure the Rest Collector Source
+### Configure the Rest Collector Source
 
 * Obtain a [Bearer Token](https://support.1password.com/events-reporting/#appendix-issue-or-revoke-bearer-tokens) from your 1Password Administrator.
-* Enter the value for the Collect header field named `Authorization` in the following format: `'Bearer YOUR_BEARER_TOKEN'` (the value *must* be a valid JavaScript string)
+* Enter the value for the Collector header field named `Authorization` in the following format: `'Bearer YOUR_BEARER_TOKEN'` (the value *must* be a valid JavaScript string)
 
-## Configure Reductions and Output Format
-* Data can be configured to output data in either OCSF or normalized JSON (Splunk) format - enable *only* one format!
+### Configure Reductions and Output Format
+* Data can be configured to output data in either normalized JSON (default), OCSF, or Splunk (`_raw` + Splunk fields) format - enable *only* one format!
 * This pack includes several functions that can help reduce events. Please make sure you evaluate the functions before enabling, to ensure vital data is not missed.
 
 ### Configure your Destination/Update Pack Routes
