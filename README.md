@@ -7,7 +7,7 @@ This pack is built as a complete SOURCE + DESTINATION solution (identified by th
 
 This pack is designed to handle JSON data collected from the 1Password Audit Event API endpoint. The JSON is parsed and the timestamp normalized from the proper field within each event. The pack offers two different optional methods of reduction:
 
-1. Drop, Sample, or Suppress based on action/object type. You can target individual action/object types by modifying the provided 1password_audit_events.csv lookup under Knowledge > Lookups.
+1. Drop, Sample, or Suppress based on action/object type. You can target individual action/object types by modifying the provided `1password_audit_events.csv` lookup under Knowledge > Lookups.
 2. Remove duplicate fields.
 
 The pack also currently includes three forms of outputs:
