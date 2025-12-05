@@ -25,8 +25,9 @@ The pack also currently includes three forms of outputs:
 
 ### Configure the Rest Collector Source
 
-* Obtain a [Bearer Token](https://support.1password.com/events-reporting/#appendix-issue-or-revoke-bearer-tokens) from your 1Password Administrator.
-* Enter the value for the Collector header field named `Authorization` in the following format: `'Bearer YOUR_BEARER_TOKEN'` (the value *must* be a valid JavaScript string)
+* Obtain a [Bearer Token](https://support.1password.com/events-reporting/#appendix-issue-or-revoke-bearer-tokens) from your 1Password Administrator. 
+* Update the `1password_bearer` variable with this value.
+
 
 ### Configure Reductions and Output Format
 * Data can be configured to output data in either normalized JSON (default), OCSF, or Splunk (`_raw` + Splunk fields) format - enable *only* one format!
@@ -44,8 +45,12 @@ Upgrading certain Cribl Packs using the same Pack ID can have unintended consequ
 
 ## Release Notes
 
+### Version 1.1.0
+- All Collector configuration is now done via variables. 
+- Collector is Scheduled out-of-the-box.
+
 ### Version 1.0.0
-Initial release
+- Initial release
 
 ## Contributing to the Pack
 

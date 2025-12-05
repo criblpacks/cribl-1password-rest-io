@@ -1,3 +1,8 @@
+1password_bearer:
+  type: string
+  lib: custom
+  value: "'YOUR_1PASSWORD_TOKEN'"
+  description: "REQUIRED: Your 1Password API Token"
 default_splunk_index:
   type: string
   lib: custom
