@@ -1,5 +1,5 @@
 1password_bearer:
-  type: string
+  type: encryptedString
   lib: custom
   value: "'YOUR_1PASSWORD_TOKEN'"
   description: "REQUIRED: Your 1Password API Token"
